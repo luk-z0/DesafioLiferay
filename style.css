@@ -1,0 +1,111 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+/* Cria o fundo */
+/* Escolhi o degradê , para algo um pouco mais estilizado , pensei algo semelhante ao logo do instagram*/
+body{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: #0555d3;
+    background-image: linear-gradient(315deg, #0555d3 0%, #09c6f9 74%);
+    /* site onde peguei as cores https://www.eggradients.com/linear-gradients*/
+    position: relative;
+}
+
+/*Definindo o glass*/
+.interface{
+    width: 600px;
+    height: 400px;
+    position : absolute;
+    transform: translate(-50%,-50%);
+    top : 50%;
+    left: 50%;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+}
+/* Definindo tamanho do title*/
+.addFila{
+
+    padding-top : 15px;
+    padding-bottom: 120px;
+    padding-left: 195px;
+    border-radius: 100%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+}
+
+.button[id = "add"]{
+    position : absolute;
+    transform: translate(-50%,-50%);
+    top : 70%;
+    left: 40%;
+    background-color: #0555d3;
+    width: 10%;
+    height: 5%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.button[id = "rmv"]{
+    position : absolute;
+    transform: translate(-50%,-50%);
+    top : 70%;
+    left: 60%;
+    background-color: #0555d3;
+    width: 10%;
+    height: 5%;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+input{
+    position : absolute;
+    transform: translate(-50%,-50%);
+    top : 50%;
+    left: 50%;
+    background: 0;
+    width: 200px;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid rgba(255,255,255, 0.3);
+    margin: 20px 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255,255,255, 0.8);
+}
+
+.glassPessoa{
+    width: 100px;
+    height: 80px;
+    position : absolute;
+    transform: translate(-50%,-50%);
+    top : 50%;
+    left: 80%;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+}
